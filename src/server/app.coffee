@@ -33,12 +33,13 @@ persons.start()
 io.on "connection", (socket) ->
 	# add socket to client sockets
 	sockets.push socket
+	log.info "Socket connected, #{sockets.length} client(s) active"
 
 	# disconnect logic
 	socket.on "disconnect", ->
 		# remove socket from client sockets
 		sockets.splice sockets.indexOf(socket), 1
-		log.info "Socket disconnected, #{sockets.length} client(s) left"
+		log.info "Socket disconnected, #{sockets.length} client(s) active"
 
 # express application middleware
 app
