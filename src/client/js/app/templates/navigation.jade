@@ -1,0 +1,24 @@
+.navbar.navbar-fixed-top.navbar-default(role="navigation")
+	.container
+		// brand and toggle
+		.navbar-header
+			button(
+				type="button",
+				data-toggle="collapse",
+				data-target="viri-navbar-collapse-1"
+			).navbar-toggle.collapsed
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+
+			a.nav-brand(href="http://viriciti.com")
+				img(
+					src="/img/viriciti-logo.png",
+					style="height: 35px; padding: 5px 15px 0 0;"
+				)
+
+		// links
+		#viri-navbar-collapse-1.collapse.navbar-collapse
+			ul.nav.navbar-nav
+				li.active
+					a(href="/#persons") Persons

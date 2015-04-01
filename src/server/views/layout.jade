@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+	head
+		// title
+		title Example application
+
+		// styles
+		link(rel='stylesheet', href='/css/app.css')
+
+		// javascript
+		script(src='/js/app.bundle.js')
+
+	body
+		.container
+			h1 Example application
+
+			.row
+				.col-xs-12
+					block content
+
+			footer
+				hr
+				p &copy; ViriCiti #{(new Date).getFullYear()}
