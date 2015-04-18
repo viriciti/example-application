@@ -21,6 +21,7 @@ require "bootstrap"
 Application = window.Application = require "./Application"
 
 # load application modules
+require "./modules/todos"
 require "./modules/persons"
 
 # setup connection logic

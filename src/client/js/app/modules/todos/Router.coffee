@@ -2,10 +2,10 @@ LayoutView = require "./views/LayoutView"
 
 class Router extends Backbone.Router
 	routes:
-		"persons": "persons"
+		"todos": "todos"
 
-	persons: ->
+	todos: ->
 		Application.layoutView.getRegion("body").show new LayoutView
-		Application.triggerRoute "persons"
+		Application.triggerRoute "todos"
 
 module.exports = Router
