@@ -1,6 +1,6 @@
 PersonsView = require "./PersonsView"
 
-module.exports = class LayoutView extends Marionette.LayoutView
+class LayoutView extends Marionette.LayoutView
 	template: require "../templates/layout.jade"
 
 	regions:
@@ -9,3 +9,4 @@ module.exports = class LayoutView extends Marionette.LayoutView
 	onBeforeShow: ->
 		@getRegion("content").show new PersonsView
 
+module.exports = LayoutView

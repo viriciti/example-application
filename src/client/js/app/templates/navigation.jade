@@ -20,5 +20,6 @@
 		// links
 		#viri-navbar-collapse-1.collapse.navbar-collapse
 			ul.nav.navbar-nav
-				li.active
-					a(href="/#persons") Persons
+				each link in items
+					li(class=link.active ? "active" : "")
+						a(href=link.url)= link.name

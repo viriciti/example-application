@@ -1,4 +1,7 @@
-class NavigationView extends Backbone.Marionette.ItemView
-	template: require "../templates/navigation.jade"
+class NavigationView extends Marionette.ItemView
+	template:           require "../templates/navigation.jade"
+
+	initialize: ->
+		@listenTo @collection, "change", @render
 
 module.exports = NavigationView

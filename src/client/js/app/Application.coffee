@@ -1,5 +1,6 @@
 ApplicationLayoutView = require "./views/ApplicationLayoutView"
 NavigationView        = require "./views/NavigationView"
+LinkCollection        = require "./collections/LinkCollection"
 
 Application = new Marionette.Application
 	container: "#application"
@@ -15,6 +16,10 @@ Application.addInitializer ->
 	@layoutView = new ApplicationLayoutView
 
 	@navigationView = new NavigationView
+		collection: new LinkCollection [
+			{ url: "/#persons", route: "persons", name: "Persons", active: false }
+			{ url: "/#todos",   route: "todos",   name: "ToDos",   active: false }
+		]
 
 	@applicationRegion.show @layoutView
 

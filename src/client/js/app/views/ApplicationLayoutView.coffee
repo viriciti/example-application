@@ -1,4 +1,4 @@
-class ApplicationLayoutView extends Backbone.Marionette.LayoutView
+class ApplicationLayoutView extends Marionette.LayoutView
 	template: require "../templates/layout.jade"
 
 	regions:
