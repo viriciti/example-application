@@ -4,6 +4,11 @@ Example application
 
 ## Installation
 
+Install `gulp` globally
+```bash
+npm install -g gulp
+```
+
 Install the required dependencies.
 ```bash
 npm install
